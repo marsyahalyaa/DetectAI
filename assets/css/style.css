@@ -320,6 +320,11 @@ p:last-child {
   display: inline-block;
 }
 
+.detect-ai-text {
+  font-size: 60px; 
+}
+
+
 .sub-title-2 p::before {
   position: absolute;
   top: 6px;
@@ -327,7 +332,6 @@ p:last-child {
   content: '';
   height: 18px;
   width: 2px;
-  background-color: var(--whiteColor);
 }
 
 .sub-title-2 {
@@ -607,6 +611,7 @@ Hero Area 2 CSS
   background-clip: text;
   text-fill-color: transparent;
   display: inline-block;
+  font-size: 60px;
 }
 
 .hero-content-2 h2 span{
