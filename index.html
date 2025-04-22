@@ -20,7 +20,7 @@
 
         <!-- favicon Linked -->
         <link rel="icon" type="image/png" href="assets/img/all-img/favicon.png">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="dark-theme">
         
@@ -49,12 +49,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">
+                                <a href="#services-section" class="nav-link">
                                     Services
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                <a href="#team-section" class="dropdown-toggle nav-link">
                                     About Us
                                 </a>
                         </ul>
@@ -80,12 +80,12 @@
                         </a>
                     </div>
                     <div class="accordion-item">
-                        <a class="accordion-link without-icon" href="services.html">
+                        <a class="accordion-link without-icon" href="#services-section">
                             Services
                         </a>
                     </div>
                     <div class="accordion-item">
-                        <a class="accordion-link without-icon" href="about.html">
+                        <a class="accordion-link without-icon" href="#team-section">
                             About Us
                         </a>
                     </div>
@@ -117,8 +117,15 @@
                                                     <form>
                                                         <input type="file" class="form-control" id="imageUpload" accept=".png, .jpg, .jpeg" style="display: none;">
                                                         <!-- Tombol untuk memicu file input -->
-                                                        <button type="button" class="btn btn-secondary" id="uploadButton">Choose Image</button>
+                                                        <button type="button" class="btn btn-secondary" id="uploadButton">
+                                                            <!-- SVG Icon di dalam tombol -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32" style="vertical-align: middle; margin-right: 8px;">
+                                                                <path fill="currentColor" d="M16 4c-4.12 0-7.36 3.13-7.813 7.125a4.9 4.9 0 0 0-3.843 3.22C1.884 15.054 0 17.248 0 20c0 3.324 2.676 6 6 6h20c3.324 0 6-2.676 6-6c0-1.76-.855-3.336-2.094-4.438c-.232-3.514-3.035-6.318-6.562-6.5C22.14 6.133 19.378 4 16 4m0 2c2.762 0 4.97 1.77 5.75 4.28l.22.72H23c2.755 0 5 2.245 5 5v.5l.406.313A4.07 4.07 0 0 1 30 20c0 2.276-1.724 4-4 4H6c-2.276 0-4-1.724-4-4c0-2.02 1.45-3.588 3.28-3.906l.657-.125l.125-.658C6.362 13.964 7.556 13 9 13h1v-1c0-3.37 2.63-6 6-6m0 5.594l-.72.687l-4 4l1.44 1.44L15 15.437V22h2v-6.563l2.28 2.282l1.44-1.44l-4-4z"/>
+                                                            </svg>
+                                                            Choose Image
+                                                        </button>
                                                     </form>
+                                                    
                                                 </div> 
                                                 <div class="col-lg-3" id="colAnalyzeButton" style="display: none;">
                                                     <form>
@@ -136,7 +143,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="short-prompt" data-aos="fade-zoom-in"
+                            <!-- <div class="short-prompt" data-aos="fade-zoom-in"
                             data-aos-duration="1000">
                                 <ul>
                                     <li><p>Quick Try :</p></li>
@@ -145,7 +152,7 @@
                                     <li><a href="portfolio.html">Animation</a></li>
                                     <li><a href="portfolio.html">Fantasy</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -154,47 +161,47 @@
         <!-- Start Hero Section -->
 
         <!-- Start Features Section -->
-        <div class="features-section-2 pt-100 pb-70">
+        <div id="services-section" class="features-section-2 pt-100 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
-                            <span>Ai Features</span>
+                            <span>Step 1</span>
                             <div class="icon">
                                 <i class="fi fi-tr-memo-circle-check"></i>
                             </div>
-                            <h3>Unique Content</h3>
-                            <p>Our ai text generator will be give you a best solution.</p>
+                            <h3>Upload Image</h3>
+                            <p>Upload the image you want to analyze.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
-                            <span>Ai Features</span>
+                            <span>Step 2</span>
                             <div class="icon">
                                 <i class="fi fi-tr-hourglass-start"></i>
                             </div>
-                            <h3>Quick Result</h3>
-                            <p>Our ai text generator will be give you a best solution.</p>
+                            <h3>Detection Process</h3>
+                            <p>The image is processed using a CNN model.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
-                            <span>Ai Features</span>
+                            <span>Step 3</span>
                             <div class="icon">
                                 <i class="fi fi-tr-puzzle-alt"></i>
                             </div>
-                            <h3>User Friendly</h3>
-                            <p>Our ai text generator will be give you a best solution.</p>
+                            <h3>Classification</h3>
+                            <p>The system classifies whether the image is AI-generated or not.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="feature-box"   data-aos="fade-up" data-aos-delay="400">
-                            <span>Ai Features</span>
+                            <span>Step 4</span>
                             <div class="icon">
                                 <i class="fi fi-tr-copy-image"></i>
                             </div>
-                            <h3>Unlimited Result</h3>
-                            <p>Our ai text generator will be give you a best solution.</p>
+                            <h3>Detection Results</h3>
+                            <p>The results will indicate whether the image is AI-generated or not.</p>
                         </div>
                     </div>
                 </div>
@@ -203,7 +210,7 @@
         <!-- End Features Section -->
 
         <!-- Start About Section -->
-        <div class="about-section pb-100">
+        <!-- <div class="about-section pb-100">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
@@ -233,11 +240,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End About Section -->
 
         <!-- Start Brand Section -->
-        <div class="brand-section-2 pb-100">
+        <!-- <div class="brand-section-2 pb-100">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-2 col-lg-2 col-md-4 col-6" data-aos="fade-zoom-in" data-aos-delay="100">
@@ -268,11 +275,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Brand Section -->
 
         <!-- Start team Section -->
-        <div class="team-section pb-100">
+        <div id="team-section"class="team-section pb-100">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-5 col-md-6 col-lg-12">
@@ -287,74 +294,46 @@
                     <div class="col-xl-7 col-md-6 col-lg-12">
                         <div class="team-card owl-carousel owl-theme" data-aos="fade-zoom-in" data-aos-delay="200">
                             <div class="single-team">
-                                <img src="assets/img/all-img/team-1.png" alt="image">
+                                <img src="assets/img/team/ali.png" alt="image">
 
                                 <div class="team-text">
                                     <div class="team-title">
-                                      <h4>Emily Parker</h4>
-                                      <span>Web Designer</span>
+                                      <h4>Muhamad Ali Imron</h4>
+                                      <span>Modeling & Integrate Website</span>
                                     </div>
-                                    <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                      porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
-                                      ultricies nisl sit amet.</p>
                                     <div class="team-social">
-                                        <a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                                        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-                                        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+                                        <a href="http://instagram.com/alimron__" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="mailto:imrona463@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-team">
-                                <img src="assets/img/all-img/team-3.png" alt="image">
+                                <img src="assets/img/team/cc.png" alt="image">
 
                                 <div class="team-text">
                                     <div class="team-title">
-                                      <h4>David Smith</h4>
-                                      <span>Web Developer</span>
+                                      <h4>Marsya Halya Alfrida</h4>
+                                      <span>Modelling & Testing Model</span>
                                     </div>
-                                    <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                      porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
-                                      ultricies nisl sit amet.</p>
                                     <div class="team-social">
-                                        <a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                                        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-                                        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+                                        <a href="http://instagram.com/marsyahalyaa" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/marsyahalyaa/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                        <a href="mailto:marsyahalya117@.gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                     </div>
                                   </div>
                             </div>
                             <div class="single-team">
-                                <img src="assets/img/all-img/team-2.png" alt="image">
+                                <img src="assets/img/team/ilham.png" alt="image">
 
                                 <div class="team-text">
                                     <div class="team-title">
-                                      <h4>Olivia Johnson</h4>
-                                      <span>UI/UX Specialist</span>
+                                      <h4>Muhammad Ilham Nurfajri</h4>
+                                      <span>Modeling & Testing Model</span>
                                     </div>
-                                    <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                      porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
-                                      ultricies nisl sit amet.</p>
                                     <div class="team-social">
-                                        <a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                                        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-                                        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="single-team">
-                                <img src="assets/img/all-img/team-4.png" alt="image">
-
-                                <div class="team-text">
-                                    <div class="team-title">
-                                      <h4>Nathan Reynolds</h4>
-                                      <span>Animator</span>
-                                    </div>
-                                    <p>Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra
-                                      porta leo, non tincidunt mauris condimentu eget. Vivamus non turpis elit. Aenean
-                                      ultricies nisl sit amet.</p>
-                                    <div class="team-social">
-                                        <a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-                                        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-                                        <a href="https://github.com" target="_blank"><i class='bx bxl-github'></i></a>
+                                        <a href="http://instagram.com/ilhamnrfjr_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/ilhamnrfjr/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                        <a href="mailto:ilham.nurfajri75@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                     </div>
                                   </div>
                             </div>
@@ -365,383 +344,25 @@
         </div>
         <!-- End team Section -->
 
-        <!-- Start Gallery Section -->
-        <div class="gallery-section pb-100">
-            <div class="container">
-                <div class="section-title-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title-2">
-                        <p>DetectAI Creation</p>
-                    </div>
-                    <h2>Unveil New Creative Horizons with Models</h2>
-                </div>
-                <!-- Filter Controls !-->
-                <div class="controls" data-aos="fade-zoom-in" data-aos-offset="200">
-                    <ul id="filters" class="clearfix">
-                        <li class="filter active" data-filter="all">All</li>
-                        <li class="filter" data-filter=".creative">Creative</li>
-                        <li class="filter" data-filter=".animate">Animate</li>
-                        <li class="filter" data-filter=".design">Design</li>
-                    </ul>
-                </div>
-                <!-- Filter Grid !-->
-                <div class="item-grid">
-                    <!-- Item 1 !-->
-                    <div class="item creative" data-cat="creative">
-                        <a href="assets/img/all-img/Gallery-1.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-1.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item creative" data-cat="creative">
-                        <a href="assets/img/all-img/Gallery-4.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-4.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item creative" data-cat="creative">
-                        <a href="assets/img/all-img/Gallery-7.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-7.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item animate" data-cat="animate">
-                        <a href="assets/img/all-img/Gallery-2.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-2.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item animate" data-cat="animate">
-                        <a href="assets/img/all-img/Gallery-5.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-5.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item animate" data-cat="animate">
-                        <a href="assets/img/all-img/Gallery-8.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-8.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-3.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-3.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-11.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-11.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-12.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-12.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-6.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-6.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-10.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-10.png" alt="image">
-                        </a>
-                    </div>
-                    <div class="item design" data-cat="design">
-                        <a href="assets/img/all-img/Gallery-9.png" class="popup-btn">
-                            <img src="assets/img/all-img/Gallery-9.png" alt="image">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Gallery Section -->
-
-        <!-- Start Testimonial Section -->
-        <div class="testimonial-section-2 pt-100 pb-70">
-            <div class="container">
-                <div class="testimonial-content-2 owl-carousel owl-theme">
-                    <div class="testimonial-item-2" data-aos="fade-up" data-aos-offset="100">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="content">
-                                    <p>"I'm very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side."</p>
-                                    <div class="info">
-                                        <h4>James Land</h4>
-                                        <span>Web Expert</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="image">
-                                    <div class="quate-icon">
-                                        <i class='bx bxs-quote-left'></i>
-                                    </div>
-                                    <img src="assets/img/all-img/testimonial-1.png" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item-2" data-aos="fade-up" data-aos-offset="200">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="content">
-                                    <p>"I'm very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side."</p>
-                                    <div class="info">
-                                        <h4>James Land</h4>
-                                        <span>Web Expert</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="image">
-                                    <div class="quate-icon">
-                                        <i class='bx bxs-quote-left'></i>
-                                    </div>
-                                    <img src="assets/img/all-img/testimonial-2.png" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item-2">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="content">
-                                    <p>"I'm very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side."</p>
-                                    <div class="info">
-                                        <h4>James Land</h4>
-                                        <span>Web Expert</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="image">
-                                    <div class="quate-icon">
-                                        <i class='bx bxs-quote-left'></i>
-                                    </div>
-                                    <img src="assets/img/all-img/testimonial-3.png" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Testimonial Section -->
-
-        <!-- Start Pricing Section -->
-        <div class="pricing-section ptb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-12">
-                        <div class="price-wrap">
-                            <div class="price-video-wrap">
-                                <video class="price-video" src="assets/img/all-img/video-2.mp4" playsinline autoplay muted loop>
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-12">
-                        <div class="pricing-content">
-                            <h2>Our Pricing Plans</h2>
-                            <p>AI systems can analyze data, recognize patterns, make decisions, and even adapt and improve over time.</p>
-
-                            <div class="pricing-table">
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="pricing-box active" data-aos="fade-zoom-in" data-aos-delay="100">
-                                            <span>Most Popular</span>
-                                            <h3>Montly Plan</h3>
-                                            <p>Our ai text generator will be give you a best solution.</p>
-                                            <div class="price-number">
-                                                <h3>$500/m</h3>
-                                            </div>
-                                            <div class="price-fetures">
-                                                <ul>
-                                                    <li>Unlimited Projects</li>
-                                                    <li>Download prototypes</li>
-                                                    <li>10 user Limite</li>
-                                                </ul>
-                                            </div>
-                                            <a class="default-btn" href="contact.html"><span>Get Started</span> <i class='bx bx-chevron-right'></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="pricing-box"  data-aos="fade-zoom-in" data-aos-delay="200">
-                                            <span>Exclusive</span>
-                                            <h3>Yearly Plan</h3>
-                                            <p>Our ai text generator will be give you a best solution.</p>
-                                            <div class="price-number">
-                                                <h3>$1200/y</h3>
-                                            </div>
-                                            <div class="price-fetures">
-                                                <ul>
-                                                    <li>Unlimited Projects</li>
-                                                    <li>Download prototypes</li>
-                                                    <li>10 user Limite</li>
-                                                </ul>
-                                            </div>
-                                            <a class="default-btn" href="contact.html"><span>Get Started</span> <i class='bx bx-chevron-right'></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Pricing Section -->
-
-        <!-- Start Blog Section -->
-        <div class="blog-section-2 pb-100">
-            <div class="container">
-                <div class="blog-content-2">
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-7 col-md-7">
-                            <div class="content">
-                                <div class="sub-title-2" data-aos="fade-down" data-aos-offset="100">
-                                    <p>Latest Blogs </p>
-                                </div>
-                                <h2 data-aos="fade-down" data-aos-offset="200">Latest News & Articles</h2>
-                                <p>AI systems can analyze data, recognize patterns, make decisions, and even adapt and improve over time.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-5 col-md-5" data-aos="fade-up" data-aos-offset="300">
-                            <div class="blog-content-btn">
-                                <a class="default-btn" href="blog.html"><span>More Posts</span> <i class='bx bx-chevron-right'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-card">
-                            <div class="blog-img">
-                                <img src="assets/img/all-img/blog-1.jpg" alt="Image" class="trasnition">
-                                <ul class="blog-metainfo">
-                                    <li><i class='bx bx-calendar'></i> <a href="blog.html">Nov 25, 2023</a></li>
-                                    <li><i class='bx bx-time'></i>2 mins read</li>
-                                </ul>
-                            </div>
-                            <div class="blog-info">
-                                <h3><a href="blog-details.html">The Rise of AI Navigating the Future of Technology</a></h3>
-                                <a href="blog-details.html" class="btn-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-card">
-                            <div class="blog-img">
-                                <img src="assets/img/all-img/blog-2.jpg" alt="Image" class="trasnition">
-                                <ul class="blog-metainfo">
-                                    <li><i class='bx bx-calendar'></i> <a href="blog.html">Jun 18, 2023</a></li>
-                                    <li><i class='bx bx-time'></i>2 mins read</li>
-                                </ul>
-                            </div>
-                            <div class="blog-info">
-                                <h3><a href="blog-details.html">Future Horizons Navigating Tomorrow World</a></h3>
-                                <a href="blog-details.html" class="btn-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-card">
-                            <div class="blog-img">
-                                <img src="assets/img/all-img/blog-3.jpg" alt="Image" class="trasnition">
-                                <ul class="blog-metainfo">
-                                    <li><i class='bx bx-calendar'></i> <a href="blog.html">Jun 18, 2023</a></li>
-                                    <li><i class='bx bx-time'></i>2 mins read</li>
-                                </ul>
-                            </div>
-                            <div class="blog-info">
-                                <h3><a href="blog-details.html">Tomorrow Tapestry Navigating the Future World</a></h3>
-                                <a href="blog-details.html" class="btn-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Blog Section -->
-
         <!-- Start Footer Area -->
         <div class="footer-area">
-            <div class="footer-top-info">
-                <div class="container-fluid">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="footer-image">
-                                <a class="popup-youtube" href="https://youtu.be/VDVHbd3nNrM?si=atnpL-PwDDJ8DX6h">
-                                    <img src="assets/img/all-img/image-1.jpg" alt="image">
-                                </a>
-                                <span id="tooltip">play</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="content ft-shape">
-                                <div class="logo">
-                                    <h2>MeetAI</h2>
-                                </div>
-                                <p>DetectAI is poised to revolutionize the way we live and work, offering unprecedented possibilities for innovation and efficiency.</p>
-                                <ul>
-                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i></a></li>
-                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a></li>
-                                    <li><a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                    <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="footer-widget-info ptb-100">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 col-md-12">
                             <div class="subscribe-area">
-                                <h2>Subscribe To Ai!</h2>
-                                <p>Artificial Intelligence is a transformation field of computer science that empowers machines to perform</p>
-                                <div class="subscribe-wrapper"> 
-                                    <div class="subscribe-box"> 
-                                        <form data-toggle="validator">
-                                            <div class="row align-items-center"> 
-                                                <div class="col-md-8">
-                                                    <input type="text" class="form-control" placeholder="Your email address @" name="EMAIL" required autocomplete="off">
-                                                </div> 
-                                                <div class="col-lg-4"> 
-                                                    <button type="submit" class="btn">Subscribe</button>
-                                                </div> 
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                                <h2>AI Image Detector</h2>
+                                <p>Detecting whether an image is generated by Artificial Intelligence or not using the Convolutional Neural Network algorithm.</p>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6 col-md-4">
                             <div class="footer-widget">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="team.html">Developers</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About Us</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6 col-md-4">
-                            <div class="footer-widget">
-                                <h4>Resource</h4>
-                                <ul>
-                                    <li><a href="blog.html">Blogs</a></li>
-                                    <li><a href="term-condition.html">Term of services</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6 col-md-4">
-                            <div class="footer-widget">
-                                <h4>Office</h4>
-                                <span>175 5th Ave, New York, NY 10010, USA</span>
-                                <a class="ft-mail" href="mailto:info@DetectAI.com">info@DetectAI.com</a>
-                                <a class="ft-number" href="tel:+18408412569">+1 840 841 25 69</a>
                             </div>
                         </div>
                     </div>
@@ -753,15 +374,6 @@
                         <div class="col-xl-4 col-lg-5">
                             <div class="cpr-left">
                                 <p>Copyright© 2024 DetectAI. All rights reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="cpr-right">
-                                <ul>
-                                    <li><a href="term-condition.html">Term of services</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
